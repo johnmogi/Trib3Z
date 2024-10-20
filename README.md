@@ -54,7 +54,8 @@ _Trib3z_ is licensed under the [GNU General Public License v3.0](https://www.gnu
 
 For questions, suggestions, or collaborations, feel free to reach out:
 
-- **Email**: [izerobot@gmail.com](mailto:izerobot@gmail.com)
+- **Site** : [https://www.t.johnmogi.com]()
+- **Email**: [izerobot@gmail.com](mailto:hi@johnmogi.com)
 - **Patreon**: [John Mogi](https://patreon.com/johnmogi)
 
 Enjoy playing _Trib3z_ and exploring the endless possibilities within!

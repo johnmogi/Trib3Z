@@ -1,0 +1,92 @@
+To build an MVP for "Tribez," let's start by outlining the necessary lists and data structures for character generation. The lists should be modular, easy to expand, and manageable. Here's a suggested approach:
+
+### 1. Main Lists for Character Generation
+
+- **Tribes List:** The four main tribes.
+- **Descendants List:** A list of sub-groups within each tribe.
+- **Attributes List:** To generate character stats like power, mana, speed, and smartness.
+- **Equipment List:** Items the character may receive.
+- **Quest List:** Possible quests that the character will embark on.
+- **Story List:** Background stories associated with each tribe.
+
+### Suggested Lists for Character Generation
+
+1. **Tribes**:
+
+   ```python
+   tribes = ["Gyptians", "Atlanteans", "Ignis", "Babylonians"]
+   ```
+
+2. **Descendants** (organized as a dictionary to match each tribe with its sub-groups):
+
+   ```python
+   descendants = {
+       "Gyptians": ["Egyptian Gypsies", "Eastern Europe", "Russian", "Polish", "Croatian", "Serbian"],
+       "Atlanteans": ["Vikings", "Romans", "European", "Celtic", "Britton", "Gaelic"],
+       "Ignis": ["North American Native", "Amazonians", "Aztec", "Mayan", "Inca", "Mexican", "Wild West Settlers"],
+       "Babylonians": ["Arabs", "Jews", "Hindu", "Chinese", "Japanese", "Mongol", "Thai", "Nordic Barbarian"]
+   }
+   ```
+
+3. **Attributes** (can be random values or assigned based on tribe):
+
+   ```python
+   attributes = ["Power", "Mana", "Speed", "Smartness"]
+   ```
+
+4. **Equipment**:
+
+   ```python
+   equipment = ["Rope", "Wand", "Backpack", "Dagger", "Light Crystal", "Coinage", "Elven Chainmail"]
+   ```
+
+5. **Quest List**:
+
+   ```python
+   quests = [
+       "Retrieve the lost relic from the ancient ruins",
+       "Defend the village from marauding invaders",
+       "Find the hidden treasure in the mystical forest",
+       "Negotiate peace between warring tribes",
+       "Embark on a journey to discover a new land"
+   ]
+   ```
+
+6. **Story List** (optional, to provide some background for each tribe):
+   ```python
+   stories = {
+       "Gyptians": "Descendants of the great nomads, roaming the lands in search of wisdom.",
+       "Atlanteans": "A seafaring people from the ancient city of Atlantis, known for their resilience.",
+       "Ignis": "Warriors of fire and passion, born from the heart of the world's oldest forests.",
+       "Babylonians": "Scholars and mystics, weaving the tapestry of time with their profound knowledge."
+   }
+   ```
+
+### 2. Basic Game Flow
+
+1. **Character Selection Screen**:
+
+   - Display the four tribes in a grid layout.
+   - Once the player selects a tribe, randomly generate the character's details (descendant, attributes, equipment, story).
+
+2. **Character Generation**:
+
+   - Randomly select a descendant from the chosen tribe's list.
+   - Generate random values for attributes like power, mana, speed, and smartness.
+   - Assign a random set of equipment items.
+   - Optionally, provide a story and quest.
+
+3. **Quest Handling**:
+
+   - Assign a quest to the character based on the selected tribe or randomly.
+
+4. **Outcome Determination**:
+   - Provide success or failure endings based on simple conditions (e.g., character stats).
+
+### 3. Implementation Plan
+
+Start by creating a Python script that will handle:
+
+- The character generation process.
+- Displaying the character's details.
+- Assigning a quest and displaying the outcome.
