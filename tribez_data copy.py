@@ -14,7 +14,7 @@ descendants = {
 # Example attributes
 attributes = ["Strength", "Agility", "Intelligence", "Wisdom", "Charisma"]
 
-# Example equipment structured as a dictionary with tribes as keys
+# Example equipment, expanded for each tribe
 equipment = {
     "Ignis": ["Fire Staff", "Flame Shield", "Ash Armor"],
     "Atlantean": ["Trident", "Sea Cloak", "Coral Armor"],

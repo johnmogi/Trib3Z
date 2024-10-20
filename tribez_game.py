@@ -17,17 +17,21 @@ def generate_character():
     for attr, value in character_attributes.items():
         print(f"  {attr}: {value}")
 
-    # Step 4: Assign Equipment
-    character_equipment = random.sample(equipment, 3)
+    # Step 4: Assign Equipment based on Tribe
+    character_equipment = random.sample(equipment[tribe], 3)
     print("Equipment:", character_equipment)
 
-    # Step 5: Assign a Quest
-    quest = random.choice(quests)
-    print("Quest:", quest)
+    # Step 5: Assign a Quest and Sub-Quests
+    main_quest = quests[tribe]["quest"]
+    sub_quests = quests[tribe]["sub_quests"]
+    selected_sub_quests = random.sample(sub_quests, 2)  # Choose 2 sub-quests
+    print("Main Quest:", main_quest)
+    print("Sub-Quests:", selected_sub_quests)
 
     # Step 6: Story
     story = stories[tribe]
-    print("Background Story:", story)
+    print("Background Story:", story["background"])
+    print("Legend:", story["legend"])
 
 # Run the character generation
 if __name__ == "__main__":
